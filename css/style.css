@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.row {      /*row se obecně používá*/
+    max-width: 1280px;
+    margin: 0 auto;     /*centrování*/
+}
+
+.logo img {
+    display: block;
+	margin: 0px auto;
+	position: relative;
+	top: 60px;
+    width: 400px;
+    margin-bottom: 110px;
+}
+
+.showroom img {
+    display: block;
+	margin: 0px auto;
+	position: relative;
+    border-radius: 16px;
+    box-shadow: 4px 8px 8px rgba(70, 63, 58, 0.6);
+	top: 20px;
+    width: 1000px;
+    margin-bottom: 100px;
+    transition: 0.4s; /*postupná přeměna po odjetí myši*/
+    transform: scale(1.0); /*musí být, aby pod obrázkem nebyl černý pruh*/
+}
+
+.showroom img:hover {
+    transform: scale(1.035); /*priblíží fotku ze 100 na 115% (scale - škálování)*/
+    transition: 0.4s, opasity 0.4s;
+}
+
+main h1 {
+    text-align: center;
+	margin-top: 40px;
+    color: #53565A;
+    font-family: "Nunito Sans",sans-serif;
+    font-size: 24px;
+}
+
+main h2 {
+    text-align: center;
+	margin-top: 16px;
+    color: #53565A;
+    font-family: "Nunito Sans",sans-serif;
+    text-decoration: none;
+    font-size: 14px; 
+}
+
+main a {
+    text-align: center;
+	margin-top: 16px;
+    color: #17beab;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+main a:link,
+main a:visited {
+    color: #17beab;
+    font-family: "Nunito Sans",sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+main a:hover,
+main a:active {
+    color: #24857a;
+    transition: 0.4s;
+}
+
+main iframe {
+    display: block;
+	margin: 0px auto;
+	position: relative;
+	top: 10px;    
+    border-radius: 16px;
+    box-shadow: 4px 8px 8px rgba(70, 63, 58, 0.6);
+
+}
+
+footer {
+    margin-top: 80px;
+    background-color:#999999;
+    background-size: cover;
+    height: 150px;
+}
+
+footer h3 {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Nunito Sans",sans-serif;
+    text-decoration: none;
+    font-size: 14px;
+}
